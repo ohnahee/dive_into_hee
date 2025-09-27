@@ -3308,7 +3308,9 @@ input, select, textarea {
 
 			}
 
-		.wrapper.fade-up > .inner {
+
+		/* fade-up */
+		.wrapper.fade-up .inner {
 			-moz-transform: translateY(0);
 			-webkit-transform: translateY(0);
 			-ms-transform: translateY(0);
@@ -3320,8 +3322,8 @@ input, select, textarea {
 			opacity: 1.0;
 		}
 
-		.wrapper.fade-up.inactive > .inner,
-		body.is-preload .wrapper.fade-up > .inner {
+		.wrapper.fade-up.inactive .inner,
+		body.is-preload .wrapper.fade-up .inner {
 			opacity: 0;
 			-moz-transform: translateY(1em);
 			-webkit-transform: translateY(1em);
@@ -3329,7 +3331,8 @@ input, select, textarea {
 			transform: translateY(1em);
 		}
 
-		.wrapper.fade-down > .inner {
+		/* fade-down */
+		.wrapper.fade-down .inner {
 			-moz-transform: translateY(0);
 			-webkit-transform: translateY(0);
 			-ms-transform: translateY(0);
@@ -3341,8 +3344,8 @@ input, select, textarea {
 			opacity: 1.0;
 		}
 
-		.wrapper.fade-down.inactive > .inner,
-		body.is-preload .wrapper.fade-down > .inner {
+		.wrapper.fade-down.inactive .inner,
+		body.is-preload .wrapper.fade-down .inner {
 			opacity: 0;
 			-moz-transform: translateY(-1em);
 			-webkit-transform: translateY(-1em);
@@ -3350,7 +3353,8 @@ input, select, textarea {
 			transform: translateY(-1em);
 		}
 
-		.wrapper.fade > .inner {
+		/* fade */
+		.wrapper.fade .inner {
 			-moz-transition: opacity 1s ease;
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
@@ -3358,10 +3362,16 @@ input, select, textarea {
 			opacity: 1.0;
 		}
 
-		.wrapper.fade.inactive > .inner,
-		body.is-preload .wrapper.fade > .inner {
+		.wrapper.fade.inactive .inner,
+		body.is-preload .wrapper.fade .inner {
 			opacity: 0;
 		}
+
+
+
+
+
+
 
 /* Header */
 
