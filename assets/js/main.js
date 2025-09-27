@@ -188,3 +188,17 @@
 			});
 
 })(jQuery);
+
+
+// Fade-up wrappers
+$('.wrapper.fade-up').scrollex({
+    mode: 'middle',
+    top: '-20vh',
+    bottom: '-20vh',
+    initialize: function() {
+        $(this).addClass('inactive');
+    },
+    enter: function() {
+        $(this).removeClass('inactive');
+    }
+});
