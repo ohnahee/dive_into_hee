@@ -1,4 +1,4 @@
-/*
+/* 
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
@@ -187,18 +187,17 @@
 				}
 			});
 
+	// Fade-up wrappers (추가: Education, Projects and Activities 등)
+		$('.wrapper.fade-up').scrollex({
+			mode: 'middle',
+			top: '-20vh',
+			bottom: '-20vh',
+			initialize: function() {
+				$(this).addClass('inactive');
+			},
+			enter: function() {
+				$(this).removeClass('inactive');
+			}
+		});
+
 })(jQuery);
-
-
-// Fade-up wrappers
-$('.wrapper.fade-up').scrollex({
-    mode: 'middle',
-    top: '-20vh',
-    bottom: '-20vh',
-    initialize: function() {
-        $(this).addClass('inactive');
-    },
-    enter: function() {
-        $(this).removeClass('inactive');
-    }
-});
